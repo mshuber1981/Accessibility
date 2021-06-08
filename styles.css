@@ -1,0 +1,60 @@
+/* General */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.item {
+  max-width: 150px;
+  margin: 2rem 0;
+}
+
+.title h1 {
+  text-align: center;
+  animation: 1s ease-in-out slideInLeft;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: blanchedalmond;
+}
+
+form {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Animation */
+@keyframes slideInLeft {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}

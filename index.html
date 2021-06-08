@@ -29,8 +29,32 @@
     <title>Shopping List</title>
   </head>
   <body>
+    <header class="title">
+      <img class="item" src="./images/cart.svg" alt="Shopping Cart" />
+      <h1 class="item">Shopping List</h1>
+    </header>
     <div class="container">
-      <h1>Shopping List</h1>
+      <main>
+        <form action="index.html" method="post" id="to_do_form">
+          <input
+            class="task_input"
+            id="todo"
+            aria-label="Add a list item"
+            type="text"
+            required
+          />
+          <button type="submit" value="Add" class="add_task">Add</button>
+        </form>
+        <ul id="list" class="list"></ul>
+        <div
+          role="status"
+          aria-live="polite"
+          id="sc_feedback"
+          class="sc_feedback"
+        >
+          <!-- Area to be pronounceable by screen readers -->
+        </div>
+      </main>
     </div>
   </body>
 </html>
