@@ -14,8 +14,15 @@ body {
   margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
+button {
+  font-size: 1rem;
+  border-radius: 10%;
+  background-color: #4d4747;
+}
+
+/* Header */
+#heading {
+  text-align: center;
 }
 
 .title {
@@ -31,21 +38,66 @@ img {
 }
 
 .title h1 {
-  text-align: center;
   animation: 1s ease-in-out slideInLeft;
 }
 
+/* Main content */
 .container {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   background-color: blanchedalmond;
 }
 
+main {
+  max-width: 75%;
+}
+
 form {
   text-align: center;
   margin-top: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 1.5rem 0;
+  overflow-wrap: break-word;
+  font-size: 1.5rem;
+}
+
+.add_task {
+  color: #00ff2a;
+}
+
+input[type="checkbox"],
+button {
+  margin: 0 1rem;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  /* text-decoration-color: #00ff2a; */
+}
+
+.delete_task {
+  color: red;
+}
+
+.sc_feedback {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Animation */
@@ -56,5 +108,12 @@ form {
 
   to {
     margin-left: 0%;
+  }
+}
+
+/* Media Queries */
+@media only screen and (min-device-width: 1000px) {
+  main {
+    max-width: 25%;
   }
 }
