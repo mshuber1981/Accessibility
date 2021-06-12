@@ -6,6 +6,6 @@ Achieve WCAG compliance by learning accessibility testing, WAI-ARIA, and website
 
 By <a href="https://github.com/Stefany93">Stefany Newman</a>
 
-### <a href="https://mshuber1981.github.io/Accessibility/">Final Project Demo</a>
+### <a href="https://mshuber1981.github.io/Accessibility/index.html">Final Project Demo</a>
 
 ![Accessibility score](/images/lh.PNG)
